@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap 5 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    a {
+      font-size: 25px;
+
+    }
+
+    .fakeimg {
+      height: 200px;
+      background: #aaa;
+    }
+
+    /* Container holding the image and the text */
+
+
+
+    /* Centered text */
+    .centered {
+      position: absolute;
+      top: 55%;
+      left: 620px;
+      transform: translate(-40%, -40%);
+      font-size: 55px;
+      color: white;
+
+    }
+
+    .centered1 {
+      position: absolute;
+      top: 68%;
+      left: 550px;
+      transform: translate(-35%, -35%);
+      font-size: 15px;
+      color: white;
+
+    }
+
+    .centered2 {
+      position: absolute;
+      top: 85%;
+      left: 650px;
+      transform: translate(-35%, -35%);
+      font-size: 30px;
+      color: transparent;
+
+    }
+
+    #div1 {
+      width: 50%;
+      height: auto;
+      margin-left: 10pz;
+      float: left;
+      text-align: center;
+      font-size: 10px;
+      margin-top: 20%;
+
+    }
+
+    #div2 {
+      width: 50%;
+      height: auto;
+      margin-left: 10pz;
+      float: left;
+      text-align: center;
+      font-size: 5px;
+      margin-top: 20%;
+    }
+
+    /** footer **/
+
+    .footer {
+      background: blue;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding-top: 115px;
+      text-align: center;
+    }
+
+    .footer .titlepage {
+      text-align: left;
+      padding-bottom: 0px;
+    }
+
+    .footer .titlepage h2 {
+      color: #fff;
+      margin: inherit;
+      border-bottom: #fff solid 1px;
+    }
+
+    .logo1 {
+      float: left;
+      margin-top: -30px;
+      width: 70px;
+      height: 70px;
+    }
+
+    ul.social_icon {
+      padding-top: 37px;
+      width: 100%;
+      float: left;
+      text-align: left;
+    }
+
+    ul.social_icon li {
+      display: inline-block;
+    }
+
+    ul.social_icon li a {
+      background: #fff;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      border-radius: 30px;
+      margin: 0 3px;
+    }
+
+    ul.social_icon li a:hover {
+      background-color: rgb(20, 19, 19);
+      color: rgb(245, 238, 238);
+    }
+
+    .footer h3 {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 25px;
+      text-align: left;
+      color: #fff;
+      padding-bottom: 15px;
+    }
+
+    .about_us li {
+      color: darkgray;
+      font-size: 17px;
+      text-align: left;
+
+    }
+
+    .conta li {
+      color: darkgray;
+      font-size: 17px;
+      text-align: left;
+    }
+
+    .bottom_form h3 {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 25px;
+      text-align: left;
+      color: #fff;
+      padding-bottom: 15px;
+    }
+
+    .bottom_form .enter {
+      border: inherit;
+      padding: 0px 19px;
+      width: 100%;
+      height: 45px;
+      background: #fffffff2;
+      color: #ccc8c8;
+      font-size: 17px;
+      font-weight: 600;
+      float: left;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .sub_btn {
+      font-size: 17px;
+      transition: ease-in all 0.5s;
+      background-color: #48ca95;
+      color: #fff;
+      padding: 10px 0px;
+      max-width: 147px;
+      border-radius: 10px;
+      width: 100%;
+      display: block;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .sub_btn:hover {
+      background-color: #000;
+      transition: ease-in all 0.5s;
+      color: #fff;
+    }
+
+    .copyright {
+      margin-top: 80px;
+      padding-bottom: 20px;
+    }
+
+    .copyright p {
+      color: #ddd;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center;
+      border-top: #ddd solid 1px;
+      padding-top: 25px;
+      font-weight: normal;
+    }
+
+    .copyright a {
+      color: #ddd;
+    }
+
+    .copyright a:hover {
+      color: #48ca95;
+    }
+
+
+    /** end footer **/
+  </style>
+</head>
+
+<body>
+  <!-- navigation1 start -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid" style="height: 30PX; background-color: blue;">
+      <!-- <a class="navbar-brand" href="javascript:void(0)">Logo</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+
+        <ul class="navbar-nav me-auto">
+          <a class="navbar-brand" href="#"> <img
+              src="https://png.pngtree.com/png-vector/20210809/ourmid/pngtree-world-map-vector-realistic-planet-sphere-earth-with-continents-asia-australia-png-image_3790125.jpg"
+              alt="Avatar Logo" style="width:40px;  margin-left: 500px;" class="rounded-pill"><B>MADE IN INDIA</B></a>
+
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navigation1 end -->
+  <!-- navigation2 start -->
+  <nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <div class="container-fluid" style="height: 100PX;">
+      <ul class="navbar-nav ">
+        <a class="navbar-brand" href="#"> <img
+            src="https://scontent.fpnq2-1.fna.fbcdn.net/v/t1.6435-9/161024057_2983766541860540_6042065996642378521_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=onMhvt8KT9YAX8czvfD&_nc_ht=scontent.fpnq2-1.fna&oh=00_AT9Esds8DQKbc4HyPuihrYK0CIreDqR569qhvlOLDAf40Q&oe=629268BF"
+            alt="Avatar Logo" style="width:70px; height: auto;" class="rounded-pill"></a>
+        <li class="nav-item ">
+          <a class="nav-link active" style="margin-left: 20px;" href="#"> Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!-- title heading start -->
+
+  <div class="col-sm-12">
+
+    <img
+      src="https://media.istockphoto.com/photos/worker-controlling-metal-melting-in-furnaces-workers-operates-at-the-picture-id1147790557?k=20&m=1147790557&s=612x612&w=0&h=g7WPvh8XKGmlQY4UvSO6jg6B6jyuOwwubnCiA8K0YTk="
+      alt="Snow" style="width:100%; height: 500px;">
+
+    <div class="centered">We make what matters work.*<br></div>
+  </div>
+
+  <div class="centered1">*Developing more efficient, sustainable power management
+    solutions that meet the ever-changing needs of our world.<br><br></div>
+  <div class="centered2"><button
+      style="border: solid white 3px;color: aliceblue;background-color: transparent;width: 180px;height: 85px;"><b>See
+        how</b></button></div>
+  </div>
+  <!-- title heading end -->
+  <!-- title card start -->
+  <div class="card-group" style="width:450px; height: 250px;float: left; margin-left: 5px;">
+
+    <img class="card-img-top"
+      src="https://images.unsplash.com/photo-1606337321936-02d1b1a4d5ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+      alt="Card image" style="margin-left: 100px; width: 70%;height: 300px;">
+
+    <div class="card-body">
+      <h4 class="card-title" style="font-size: 20px; margin-left: 80px;">DIGITAL INNOVATION</h4>
+      <p class="card-text" style="font-size: 30px;color: blue; margin-left: 80px;">Brightlayer: Bringing the
+        digital future into focus</p>
+      <a href="#" class="btn btn-primary" style="margin-left: 80px;">See Profile</a>
+
+    </div>
+  </div>
+  </div>
+  <!-- second -->
+  <div class="card-group" style="width:400px; height: 250px;float: left; margin-left: 40px;">
+
+    <img class="card-img-top"
+      src="https://images.unsplash.com/photo-1542274368-443d694d79aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aW5kdXN0cmlhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+      alt="Card image" style="margin-left: 55px; width: 71%;height: 300px;">
+
+    <div class="card-body">
+      <h4 class="card-title" style="font-size: 20px; margin-left: 40px;">ENERGY TRANSITION</h4>
+      <p class="card-text" style="font-size: 30px;color: blue; margin-left: 40px;">Advancing a new energy feature</p>
+      <a href="#" class="btn btn-primary" style="margin-left: 40px;">See Profile</a>
+
+    </div>
+  </div>
+  </div>
+  <!-- third -->
+  <div class="card-group" style="width:400px; height: 250px;float: left;margin-left: 30px;">
+
+    <img class="card-img-top"
+      src="https://images.unsplash.com/photo-1544475982-9a3b42fff446?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+      alt="Card image" style="margin-left: 55px; width: 71%;height: 300px;">
+
+    <div class="card-body">
+      <h4 class="card-title" style="font-size: 20px; margin-left: 40px;">SUSTAINABILITY</h4>
+      <p class="card-text" style="font-size: 30px;color: blue; margin-left: 40px;">Eaton operations to be carbon natural
+        by 2030</p>
+      <a href="#" class="btn btn-primary" style="margin-left: 40px;">See Profile</a>
+
+    </div>
+  </div>
+  </div><br><br><br>
+
+
+  <!-- title card end -->
+  <!-- paragrapgstart -->
+  <div id="div1">
+    <h1>
+      We're dedicated to improving people's lives and the environment with power management technologies that are more
+      reliable, efficient, safe and sustainable.
+    </h1>
+  </div>
+
+  <div id="div2">
+    <h1 style="font-size: 20px;">
+      Every day, all around the world,<br> people depend on technology, transportation,<br> energy and infrastructure to
+      live
+      and work.<br> With rapid growth in electrification,<br> an energy transition driven by climate change <br> and
+      explosive
+      growth in connectivity,<br> we’re well positioned to solve the world’s <br> toughest electrical and mechanical
+      power<br>
+      management challenges. Because that’s what really <br> matters. And we’re here to make sure it works. ​<br>
+    </h1>
+  </div>
+
+  <div class="col-sm-12">
+
+    <img
+      src="https://images.pexels.com/photos/236722/pexels-photo-236722.jpeg?cs=srgb&dl=pexels-pixabay-236722.jpg&fm=jpg"
+      alt="Snow" style="width:100%; height: 500px;">
+    <!-- 
+  <div class="centered">We make what matters work.*<br></div>
+</div> -->
+
+    <div class="centered1">*Developing more efficient, sustainable power management
+      solutions that meet the ever-changing needs of our world.<br><br></div>
+    <div class="centered2"><button
+        style="border: solid white 3px;color: aliceblue;background-color: transparent;width: 180px;height: 85px;"><b>See
+          how</b></button></div>
+  </div>
+  <!-- title heading end -->
+  <!-- title card start -->
+  <div class="card-group" style="width:450px; height: 250px;float: left; margin-left: 5px;">
+
+    <img class="card-img-top"
+      src="https://thumbs.dreamstime.com/b/industrial-background-factory-interior-as-57579169.jpg" alt="Card image"
+      style="margin-left: 100px; width: 70%;height: 300px;">
+
+    <div class="card-body">
+      <h4 class="card-title" style="font-size: 20px; margin-left: 80px;">CYBERSECURITY</h4>
+      <p class="card-text" style="font-size: 29px;color: blue; margin-left: 80px;">Product security has never been more
+        important</p>
+
+
+    </div>
+  </div>
+  </div>
+  <!-- second -->
+  <div class="card-group" style="width:400px; height: 250px;float: left; margin-left: 40px;">
+
+    <img class="card-img-top"
+      src="https://st.depositphotos.com/1155256/2034/i/450/depositphotos_20347599-stock-photo-oil-and-gas-refinery-illuminated.jpg"
+      alt="Card image" style="margin-left: 55px; width: 76%;height: 300px;">
+
+    <div class="card-body">
+      <h4 class="card-title" style="font-size: 20px; margin-left: 40px;">INDUSTRY 4.0</h4>
+      <p class="card-text" style="font-size: 30px;color: blue; margin-left: 40px;">Leading the way to the factory of the
+        feature</p>
+
+    </div>
+  </div>
+  </div>
+  <!-- third -->
+  <div class="card-group" style="width:400px; height: 250px;float: left;margin-left: 30px;">
+
+    <img class="card-img-top"
+      src="https://thumbs.dreamstime.com/b/aerial-view-oil-gas-petrochemical-industrial-refinery-factory-storage-tank-pipeline-steel-plant-industry-zone-ecosystem-177888074.jpg"
+      alt="Card image" style="margin-left: 55px; width: 71%;height: 300px;">
+
+    <div class="card-body">
+      <h4 class="card-title" style="font-size: 20px; margin-left: 40px;">VECHLEELECTRIFICATION</h4>
+      <p class="card-text" style="font-size: 30px;color: blue; margin-left: 40px;">We make the electric revolution work
+      </p>
+
+    </div>
+  </div>
+  </div><br><br><br>
+  <!--  footer -->
+  <footer style="margin-top: 30%;">
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+
+            <img class="logo1"
+              src="https://scontent.fpnq2-1.fna.fbcdn.net/v/t1.6435-9/161024057_2983766541860540_6042065996642378521_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=onMhvt8KT9YAX8czvfD&_nc_ht=scontent.fpnq2-1.fna&oh=00_AT9Esds8DQKbc4HyPuihrYK0CIreDqR569qhvlOLDAf40Q&oe=629268BF"
+              alt="#" style="margin-left: 25%; width: 50%;height: 50%;" />
+            <ul class="social_icon">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <h3 style="color: chartreuse; margin-left: 20%;">About Us</h3>
+            <ul class="about_us">
+              <li>Eaton is an intelligent power management company dedicated to improving the quality of life and
+                protecting the environment for people everywhere..</li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <h3 style="color: chartreuse; margin-left: 20%;">Contact Us</h3>
+            <ul class="conta">
+              <li>Mob no: 7009564258,<br>
+                Email: atul800023@gmail.com <br>
+                krishrajkbsahay70@gmail.com</li>
+
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <form class="bottom_form">
+              <h3>Newsletter</h3>
+              <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+              <button class="sub_btn">subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>© 2019 All Rights Reserved. Design by Atul singh Free Html Templates</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <!-- Javascript files-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <!-- sidebar -->
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>
