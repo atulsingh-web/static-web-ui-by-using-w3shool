@@ -1,0 +1,1 @@
+# static-web-ui-by-using-w3shool![screencapture-file-C-Users-Admin-OneDrive-Desktop-w3school-index-html-2022-04-29-22_39_12](https://user-images.githubusercontent.com/102878103/165992444-18ccab7f-c3fe-4d0b-ad59-b92bb8b41a07.png)
